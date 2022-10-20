@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: yellow;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  gap: 4rem;
+}
+
+form::after {
+  content: "";
+  height: 0.1rem;
+  width: 100%;
+  background-color: red;
+}
+
+form input,
+form textarea {
+  border-radius: 2rem;
+  border: none;
+  box-shadow: 0 0.4rem 0.8rem #00000050;
+}
+
+form input:focus-visible,
+form textarea:focus-visible {
+  outline: .2rem solid rgb(0, 162, 255);
+}
+
+#title {
+  width: 30%;
+  height: 2rem;
+  padding: 2rem;
+}
+
+#desc {
+  padding: 2rem;
+  resize: none;
+  width: 30%;
+}
+
+#submit {
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.1s;
+  width: 40%;
+  border: none;
+  border-radius: 3rem;
+  box-shadow: 0 0.4rem 0.8rem #00000050;
+  background: rgb(0, 162, 255);
+  font-size: 2.2rem;
+}
+
+#submit:hover {
+  background-color: rgba(0, 162, 255, 0.827);
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.8rem;
+  margin-top: 4rem;
+}
+
+#main {
+  width: 60%;
+  margin: 0 auto;
+}
+
+li {
+  background: #fff;
+  list-style: none;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.4rem 0.8rem #00000050;
+  margin-bottom: 4rem;
+}
+
+.checked {
+  background: rgba(0, 162, 255, 0.577);
+}
+
+.title-input {
+  font-size: 2.8rem;
+  border: none;
+  padding: .8rem;
+  width: 97%;
+}
+
+li .todo-desc {
+  font-size: 1.8rem;
+  padding: .2rem 1.6rem;
+  margin: 0;
+  border-radius: 1rem;
+}
+
+h3{
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+#main input:focus-visible {
+  outline:none;
+  border: none;
+  background: inherit;
+}
+
+#main input {
+  outline:none;
+  border: none;
+  background: transparent;
+}
+
+input:disabled {
+  cursor: default;
+  background-color: inherit;
+  color:inherit;
+  border: none;
+}
+li button {
+  margin-left: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 0.8rem #00000050;
+  border: none;
+  padding: .5rem 1rem;
+  margin-top: 3rem;
+  cursor: pointer;
+  transition: all .1s;
+}
+
+li button:hover {
+  background-color:yellowgreen;
+} 
+
+.my-alert {
+  position: fixed;
+  left: -100%;
+  background: rgb(0, 162, 255);
+  padding: 4rem;
+  width: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.4rem 0.8rem #00000050;
+  gap: 3rem;
+  border-radius: 2rem;
+  transition: all 3s;
+}
+
+.my-alert span {
+  font-size: 3.6rem;
+}
+
+.my-alert button {
+  font-size: 2.8rem;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  transition: all .1s;
+  cursor: pointer;
+}
+
+.my-alert button:hover {
+  background: yellow;
+}
